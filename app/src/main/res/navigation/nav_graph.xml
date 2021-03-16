@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentInicio">
+
+    <fragment
+        android:id="@+id/fragmentInicio"
+        android:name="com.tomdeveloper.ejercicio1.home_activity.inicio.ui.FragmentInicio"
+        android:label="FragmentInicio" >
+        <action
+            android:id="@+id/action_fragmentInicio_to_fragmentList"
+            app:destination="@id/fragmentList" />
+        <action
+            android:id="@+id/action_fragmentInicio_to_fragmentProfile"
+            app:destination="@id/fragmentProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentList"
+        android:name="com.tomdeveloper.ejercicio1.home_activity.list.ui.FragmentList"
+        android:label="FragmentList" />
+    <fragment
+        android:id="@+id/fragmentProfile"
+        android:name="com.tomdeveloper.ejercicio1.home_activity.profile.ui.FragmentProfile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
